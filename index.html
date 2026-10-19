@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8d2422">
+<title>Pooja Space — Your place for prayer</title>
+<style>
+:root{--red:#8d2422;--red2:#b83b32;--gold:#d9a34a;--cream:#fff8ef;--paper:#fffdf9;--ink:#392923;--muted:#82716a;--line:#f0dfcf;--rose:#fbe8e2}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{background:#fffaf3;border-bottom:1px solid var(--line);padding:15px 24px;position:sticky;top:0;z-index:5}.top{max-width:1500px;margin:auto;display:flex;align-items:center;gap:14px}.logo{font-size:35px;color:var(--red)}.brand{font:700 29px Georgia,serif;color:#69221f}.tag{font-size:12px;color:var(--muted)}.spacer{flex:1}.date{background:var(--rose);border:1px solid #f4d5ca;border-radius:13px;padding:10px 14px;color:var(--red);font-weight:650}
+main{max-width:1500px;margin:16px auto;padding:0 16px 30px}.layout{display:grid;grid-template-columns:minmax(240px, .85fr) minmax(350px,1.55fr) minmax(280px,.95fr);gap:12px;align-items:stretch}.panel{background:var(--paper);border:1px solid var(--line);border-radius:19px;padding:17px;box-shadow:0 5px 20px #7b3c1608;min-width:0}.panel h2{font:700 21px Georgia,serif;color:#702520;margin:0}.intro{color:var(--muted);font-size:13px;margin:4px 0 15px}.upload{display:block;text-align:center;padding:18px 12px;background:linear-gradient(120deg,#fbd8cf,#fbe9e0);border-radius:13px;color:var(--red);font-weight:750;cursor:pointer;border:1px dashed #df9b8c}.upload span{display:block;font-size:12px;font-weight:400;margin-top:3px}.filelist{margin-top:12px}.file{display:flex;align-items:center;gap:10px;padding:12px 9px;border-bottom:1px solid #f3e6db;cursor:pointer;border-radius:10px}.file:hover,.file.active{background:#fff0eb}.pdficon{background:#e94d43;color:white;border-radius:6px;padding:7px 6px;font-size:12px;font-weight:800}.filetext{min-width:0;flex:1}.filetext b{display:block;font-size:13px;overflow-wrap:anywhere}.filetext small{color:var(--muted)}.remove{border:0;background:none;color:#9b8278;cursor:pointer;font-size:18px}
+.viewer{background:linear-gradient(145deg,#fffdf9,#fff1e6);padding:24px;display:flex;flex-direction:column;min-height:620px;justify-content:center;align-items:center;text-align:center}.welcome-art{font-size:84px;margin-bottom:14px}.viewer h2{font:700 30px Georgia,serif;color:#702520;margin:0 0 10px}.viewer p{max-width:440px;color:var(--muted);margin:0 auto 18px}.welcome-quote{max-width:440px;background:#fff5e6;border:1px solid #f0dfb5;border-radius:15px;padding:18px;color:#7d3428;font-family:Georgia,serif;font-size:18px}.welcome-note{font-size:12px;color:var(--muted);margin-top:18px}.btn{border:0;border-radius:11px;padding:11px 14px;background:var(--red);color:white;font-weight:700;cursor:pointer}.btn.light{background:#fff0e8;color:var(--red);border:1px solid var(--line)}
+.rightcol{display:flex;flex-direction:column;gap:12px}.deity{width:100%;height:145px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#ffe7ae,#f7c980 40%,#a94924 100%);border-radius:14px;margin:10px 0;color:#7c251a;font-size:60px}.offerings{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.offering{border:1px solid transparent;background:#fff7f0;border-radius:12px;padding:10px 3px 8px;cursor:pointer;text-align:center;color:var(--ink);font-size:11px}.offering span{display:block;font-size:25px;margin-bottom:3px}.offering.selected{border-color:var(--red);background:#ffe8df;box-shadow:0 0 0 1px #8d242220}.label{display:block;font-weight:700;color:#702520;margin:13px 0 7px}textarea,input[type=text]{width:100%;border:1px solid #e8d8ca;background:#fffdfa;border-radius:12px;padding:12px;font:inherit;color:var(--ink)}textarea{resize:vertical;min-height:88px}textarea:focus,input:focus{outline:2px solid #e8b2a4;border-color:transparent}.counter{text-align:right;font-size:11px;color:var(--muted)}.offerbtn{width:100%;margin-top:10px}.blessing{background:#fff4df;border:1px solid #f0dfb5;text-align:center}.blessing .star{font-size:25px}.blessing h3{margin:2px 0 7px;color:#8a281e;font:700 19px Georgia,serif}.blessing p{margin:0}.hidden{display:none!important}.status{margin-top:10px;color:#7c3229;font-size:13px}.small{font-size:12px;color:var(--muted)}.toast{margin-top:10px;background:#fdf0df;padding:10px;border-radius:10px;color:#77271f}
+@media(max-width:1050px){.layout{grid-template-columns:minmax(220px,.8fr) minmax(320px,1.4fr)}.rightcol{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.viewer{min-height:560px}}
+@media(max-width:650px){header{padding:12px}.top{flex-wrap:wrap}.brand{font-size:25px}.date{font-size:12px;padding:7px 9px}main{padding:0 10px 20px}.layout{grid-template-columns:1fr}.rightcol{grid-column:auto;display:flex}.viewer{min-height:520px}.pdfstage iframe{min-height:520px}.panel{padding:14px}}
+@media print{header,.leftpanel,.viewer,.offerbtn,.upload{display:none!important}body{background:white}.layout{display:block}.rightcol{display:block}.panel{box-shadow:none}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="logo">❀</div><div><div class="brand">Pooja Space</div><div class="tag">Your personal space for prayer and peace</div></div><div class="spacer"></div><div class="date">🪔 &nbsp; Your Pooja Space</div></div></header>
+<main><div class="layout">
+<section class="panel leftpanel">
+<h2>📖 My Pooja PDFs</h2><p class="intro">Upload and read your pooja books here</p>
+<label class="upload" for="pdfInput">⇧ &nbsp; Upload PDF<span>Choose a PDF from your device</span></label><input id="pdfInput" type="file" accept="application/pdf,.pdf" multiple hidden>
+<div class="filelist" id="fileList"><div class="small" id="emptyText">Your uploaded PDFs will appear here.</div></div>
+<p class="small" style="margin-top:15px">Files are opened locally in this browser. They are not uploaded to a server.</p>
+</section>
+<section class="panel viewer" id="welcomePanel">
+<div class="welcome-art">🪷 🪔</div><h2>A Moment of Prayer</h2><p>This is your peaceful space to make a virtual offering, write a prayer intention, and receive a blessing.</p><div class="welcome-quote">“May your heart be peaceful, your home be filled with light, and your loved ones be blessed.”</div><label class="btn" for="pdfInput" style="margin-top:18px">＋ Add a Pooja PDF</label><div class="welcome-note">Your PDF will be kept in the list on the left, not displayed in the centre.</div>
+</section>
+<div class="rightcol">
+<section class="panel">
+<h2>🪷 Online Offering</h2><p class="intro">Offer with devotion from anywhere</p>
+<div class="deity" role="img" aria-label="A devotional lamp and lotus illustration">🪷 🪔</div>
+<div class="offerings" id="offerings">
+<button class="offering selected" data-offer="Flowers"><span>🌺</span>Flowers</button>
+<button class="offering" data-offer="Light lamp"><span>🪔</span>Light lamp</button>
+<button class="offering" data-offer="Incense"><span>🪷</span>Incense</button>
+<button class="offering" data-offer="Naivedyam"><span>🍎</span>Naivedyam</button>
+<button class="offering" data-offer="Prayer"><span>🙏</span>Prayer</button>
+</div>
+<label class="label" for="intention">📝 My Prayer Intention</label><p class="intro">Write your prayer or wish before offering</p>
+<textarea id="intention" maxlength="500" placeholder="Type your prayer, wish or intention here…"></textarea><div class="counter"><span id="count">0</span>/500</div>
+<button class="btn offerbtn" id="offerBtn">🙏 &nbsp; Offer and Receive Blessings</button>
+<div id="offerStatus" class="status" aria-live="polite"></div>
+</section>
+<section class="panel blessing" id="blessingPanel"><div class="star">✨ 🌼 ✨</div><h3>Receive Blessings</h3><p id="blessingText">May the Divine bless you with peace, strength, wisdom, and happiness.</p><p class="small" id="blessingSub" style="margin-top:8px">May your home be filled with light and love.</p></section>
+</div>
+</div>
+</main>
+<script>
+const input=document.getElementById('pdfInput'),list=document.getElementById('fileList');
+let pdfs=[],current=null,selectedOffer='Flowers';
+function selectPdf(id){const chosen=pdfs.find(p=>p.id===id);if(!chosen)return;window.open(chosen.url,'_blank','noopener');current=chosen;renderFiles();}
+function renderFiles(){list.innerHTML='';if(!pdfs.length){list.innerHTML='<div class="small">Your uploaded PDFs will appear here.</div>';current=null;return;}
+pdfs.forEach(p=>{const row=document.createElement('div');row.className='file'+(current&&current.id===p.id?' active':'');row.innerHTML='<div class="pdficon">PDF</div><div class="filetext"><b></b><small></small></div><button class="remove" title="Remove PDF" aria-label="Remove PDF">⋮</button>';row.querySelector('b').textContent=p.file.name;row.querySelector('small').textContent=(p.file.size/1024/1024).toFixed(2)+' MB';row.addEventListener('click',e=>{if(e.target.closest('.remove')){pdfs=pdfs.filter(x=>x.id!==p.id);URL.revokeObjectURL(p.url);if(current&&current.id===p.id)current=null;renderFiles();}else selectPdf(p.id)});list.appendChild(row);});}
+input.addEventListener('change',()=>{[...input.files].filter(f=>f.type==='application/pdf'||f.name.toLowerCase().endsWith('.pdf')).forEach(file=>pdfs.push({id:Date.now()+'-'+Math.random(),file,url:URL.createObjectURL(file)}));if(pdfs.length&&!current)selectPdf(pdfs[pdfs.length-1].id);else renderFiles();input.value='';});
+
+document.querySelectorAll('.offering').forEach(btn=>btn.addEventListener('click',()=>{selectedOffer=btn.dataset.offer;document.querySelectorAll('.offering').forEach(b=>b.classList.toggle('selected',b===btn));}));
+const intention=document.getElementById('intention');intention.addEventListener('input',()=>document.getElementById('count').textContent=intention.value.length);
+document.getElementById('offerBtn').addEventListener('click',()=>{const prayer=intention.value.trim();const messages={Flowers:'May this offering of flowers represent love, gratitude, and a peaceful heart.', 'Light lamp':'May this light remind you of hope, clarity, and courage in every step.',Incense:'May your mind find calm and your home be filled with peace.',Naivedyam:'May your life be nourished with gratitude, kindness, and abundance.',Prayer:'May your heartfelt prayer bring you comfort, strength, and peace.'};document.getElementById('blessingText').textContent=messages[selectedOffer]||messages.Prayer;document.getElementById('blessingSub').textContent=prayer?'Your prayer intention: “'+prayer+'”':'May you and your loved ones be blessed with health, peace, and happiness.';document.getElementById('offerStatus').textContent='Your '+selectedOffer.toLowerCase()+' offering has been made in this digital space. 🙏';document.getElementById('blessingPanel').scrollIntoView({behavior:'smooth',block:'nearest'});});
+</script>
+</body></html>
